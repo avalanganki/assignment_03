@@ -66,3 +66,8 @@ if package_data:
     # 4. Show the total.
     #    TODO: st.success(f"Total 📦 Size: {total} {unit}")
     st.success(f"Total 📦 Size: {total} {unit}")
+
+
+"""
+For this assignment, I had the most trouble understanding session_state. I've used it before, but usually for one value at the start of an AI chatbot, not three, and not with a list. In Part 3, process_files.py, session_state keeps the counts and history intact across every rerun. Without it, files_processed would reset to 0 each time. The history list is initialized once, when the script first runs, and a summary is added only when the button is clicked, so the same file isn't counted twice. Next, I plan to practice by adding a Reset button to test whether I understand which values need to be cleared.
+"""
